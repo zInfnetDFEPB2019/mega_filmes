@@ -1,10 +1,10 @@
-# Desenvolvimento Front End
+# Bloco de Desenvolvimento Front End
 
-Repositório criado para auxiliar no versionamento de códigos da disciplina de Projeto de Bloco do instituto **Infnet**.  Consiste em uma aplicação web simples com uso do tecnologias como **HTML**, **CSS**, **JavaScript** e o framework de frontend **Vue**.
+Repositório criado para auxiliar no versionamento de códigos da disciplina de Projeto de Bloco do instituto **Infnet**.  Consiste em uma aplicação web simples com uso de tecnologias como **HTML**, **CSS**, **JavaScript** e o framework de frontend **Vue**.
 
 ## Mega Filmes
 
-Aplicação web para busca de informações filmes, séries  e atores como:
+Aplicação web para busca de informações de filmes, séries e atores como:
 
  - Data de Lançamento
  - Sinopse
