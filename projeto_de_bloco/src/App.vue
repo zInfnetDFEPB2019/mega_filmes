@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <NavBar/>
+    <Home/>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import Home from './components/Home.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Vue from 'vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -17,7 +17,7 @@ Vue.use(IconsPlugin)
 export default {
   name: 'app',
   components: {
-    NavBar
+    Home
   }
 }
 </script>
