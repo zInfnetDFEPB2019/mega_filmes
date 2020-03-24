@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <!-- <Home/> -->
-    <Buscar/>
+    <!-- <Buscar/>-->
+    <Detalhe/>
   </div>
 </template>
 
 <script>
 //import Home from './components/Home.vue'
-import Buscar from './components/Buscar.vue'
+//import Buscar from './components/Buscar.vue'
+import Detalhe from './components/Detalhe.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Vue from 'vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -20,7 +22,8 @@ export default {
   name: 'app',
   components: {
 //    Home,
-    Buscar
+//    Buscar,
+    Detalhe
   }
 }
 </script>
