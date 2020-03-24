@@ -21,11 +21,36 @@
         </div>
     </div>
 
-    <div>
+    <div id>
         <b-card no-body>
             <b-tabs pills card vertical>
                 <b-tab title="Todos" active><b-card-text>
-
+                    <b-list-group>
+                        <b-list-group-item href="#" class="">
+                            <b-container class="bv-example-row">
+                                <b-row>
+                                    <b-col>
+                                        <b-img left src="https://image.tmdb.org/t/p/original/jrYbYRMRwCO7vNtTdoqNcgALwAi.jpg" class="card-img" alt="Postor do Filme"></b-img>
+                                    </b-col>
+                                    <b-col>
+                                        <h1>Batman Begins</h1>
+                                        <div class="divSinopse">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+                                            an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                            It has survived not only five centuries, but also the leap into electronic 
+                                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the 
+                                            </p>
+                                        </div>
+                                    </b-col>
+                                </b-row>
+                            </b-container>
+                            <div class="divBotao">
+                                <b-button class="btnInfo" pill variant="outline-danger">Mais informações</b-button>
+                            </div>
+                            <p></p>
+                        </b-list-group-item>
+                    </b-list-group>
                 </b-card-text></b-tab>
                 <b-tab title="Filmes"><b-card-text>
 
@@ -69,43 +94,7 @@
 
 <script>
   export default {
-    data() {
-      return {
-        perPage: 8,
-        currentPeoplePage: 1,
-        pessoas: [
-          { id: 1, first_name: 'Fred', last_name: 'Flintstone' },
-          { id: 2, first_name: 'Wilma', last_name: 'Flintstone' },
-          { id: 3, first_name: 'Barney', last_name: 'Rubble' },
-          { id: 4, first_name: 'Betty', last_name: 'Rubble' },
-          { id: 5, first_name: 'Pebbles', last_name: 'Flintstone' },
-          { id: 6, first_name: 'Bamm Bamm', last_name: 'Rubble' },
-          { id: 7, first_name: 'The Great', last_name: 'Gazzoo' },
-          { id: 8, first_name: 'Rockhead', last_name: 'Slate' },
-          { id: 9, first_name: 'Pearl', last_name: 'Slaghoople' }
-        ],
-        seriePaginaAtual: 1,
-        series: [
-          { id: 1, first_name: 'Fred', last_name: 'Flintstone' },
-          { id: 2, first_name: 'Wilma', last_name: 'Flintstone' },
-          { id: 3, first_name: 'Barney', last_name: 'Rubble' },
-          { id: 4, first_name: 'Betty', last_name: 'Rubble' },
-          { id: 5, first_name: 'Pebbles', last_name: 'Flintstone' },
-          { id: 6, first_name: 'Bamm Bamm', last_name: 'Rubble' },
-          { id: 7, first_name: 'The Great', last_name: 'Gazzoo' },
-          { id: 8, first_name: 'Rockhead', last_name: 'Slate' },
-          { id: 9, first_name: 'Pearl', last_name: 'Slaghoople' }
-        ],
-      }
-    },
-    computed: {
-      totalPessoas() {
-        return this.pessoas.length
-      },
-      totalSeries() {
-          return this.series.length
-      }
-    }
+
   }
 </script>
 
@@ -117,5 +106,18 @@
   padding-right: 9em;
   padding-left: 9em;
   padding-top: 2em;
+}
+.card-img {
+    width: 60% !important;
+}
+.divBotao {
+    text-align: right;
+}
+h1 {
+    float: right;
+}
+.divSinopse {
+    float: right;
+    text-align: right;
 }
 </style>
